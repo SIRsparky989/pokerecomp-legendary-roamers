@@ -1,0 +1,13 @@
+{
+  "id": "legendary_roamers",
+  "name": "Legendary Roamers",
+  "version": "0.1.17",
+  "api_version": 51,
+  "entry": "mod.gd",
+  "description": "TEST: visible moving Lugia, Ho-Oh and Celebi roamers; HP/status-ready battle requests for future API support.",
+  "games": [
+    "gold",
+    "silver",
+    "crystal"
+  ]
+}
