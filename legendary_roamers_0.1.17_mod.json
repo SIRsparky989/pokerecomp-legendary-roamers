@@ -1,0 +1,13 @@
+{
+  "id": "legendary_roamers",
+  "name": "Legendary Roamers",
+  "version": "0.1.17",
+  "api_version": 54,
+  "entry": "mod.gd",
+  "description": "TEST: API54 visible legendary roamers preserve HP, DVs and status between encounters.",
+  "games": [
+    "gold",
+    "silver",
+    "crystal"
+  ]
+}
