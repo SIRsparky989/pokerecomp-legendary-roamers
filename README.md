@@ -1,60 +1,34 @@
-# PokéRecomp Legendary Roamers
+## Legendary Roamers v0.1.18 Alpha
 
-A PokéRecomp mod that gives legendary Pokémon a second chance by turning uncaught legendary encounters into roaming Pokémon.
+### Changes
 
-> **Status: Alpha / Work in Progress**
+- Reworked custom visible legendary roaming to use one shared world actor.
+- Fixed Ho-Oh not appearing while Overworld Encounters was enabled.
+- Lugia, Ho-Oh and Celebi are now managed by the same visible roaming system.
+- Multiple active custom legendary roamers can coexist.
+- Optimized movement by caching encounter/grass cells when entering a map.
+- Removed expensive per-frame encounter-cell rebuilding that caused major slowdown.
 
-Legendary Roamers is currently under active development and testing. It is not yet intended as a stable release.
+### Confirmed working
 
-## Goal
+#### Lugia
+- Visible overworld roaming with Overworld Encounters enabled.
+- HP persistence between encounters.
+- Status persistence between encounters.
+- Relocation after an uncaught encounter.
+- Catching permanently removes it from custom roaming state.
 
-The mod changes what happens when certain legendary Pokémon are encountered but not caught.
+#### Ho-Oh
+- Original encounter transitions into custom roaming after an uncaught battle.
+- Visible overworld roaming with Overworld Encounters enabled.
+- HP persistence between encounters, including returning at 1 HP after a KO.
+- Relocation after an uncaught encounter.
+- Catching permanently removes it from custom roaming state.
 
-Instead of permanently losing the Pokémon after defeating it or leaving the battle, the legendary can become a roaming Pokémon.
+### Still to test
 
-The basic rule is:
+- Celebi's complete GS Ball / Ilex Forest encounter-to-roamer flow.
 
-**Caught = permanently removed.**  
-**Not caught = remains available and can roam.**
+### Status
 
-## Current development
-
-The current development version is based on PokéRecomp's mod API and is being tested primarily with Pokémon Crystal.
-
-### Lugia
-
-Lugia is currently the most extensively tested custom roamer.
-
-Confirmed during testing:
-
-- The original stationary Lugia encounter occurs normally.
-- If Lugia is not caught, it can become a custom roamer.
-- Lugia can be assigned to a route.
-- Lugia can appear visibly in grass when Overworld Encounters are enabled.
-- The overworld Lugia can move through valid encounter tiles.
-- Walking into Lugia can start the battle automatically.
-- Pressing A while facing Lugia can also start the battle.
-- After an uncaught battle, Lugia can relocate to another route.
-- Saved HP can be retained by the mod between encounters.
-
-### Ho-Oh and Celebi
-
-Support for Ho-Oh and Celebi is under development using the same custom roaming system.
-
-Their intended behavior is:
-
-- Their original encounter happens first.
-- If caught, nothing changes.
-- If the original encounter ends without a capture, roaming begins.
-
-### Raikou, Entei and Suicune
-
-Where possible, the mod intends to preserve PokéRecomp's native roaming mechanics for the legendary beasts.
-
-The intended rule remains the same: only capturing a legendary should permanently remove it.
-
-## Overworld roaming
-
-Custom roamers can use PokéRecomp's world actor system so they can appear as visible Pokémon on their current route.
-
-This allows custom legendary encounters to coexist with PokéRecomp's Overworld Encounters feature instead of relying exclusively on invisible random encounters.
+Legendary Roamers remains Alpha while Celebi receives its full gameplay test.
