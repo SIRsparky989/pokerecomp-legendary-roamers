@@ -1,0 +1,18 @@
+{
+  "id": "legendary_roamers",
+  "name": "Legendary Roamers",
+  "version": "0.1.64",
+  "api_version": 59,
+  "entry": "mod.gd",
+  "description": "Gives supported Legendary Pokémon another chance after an uncaught encounter by turning them into persistent roaming Pokémon.",
+  "games": [
+    "gold",
+    "silver",
+    "crystal"
+  ],
+  "menu_path": [
+    "Community Mods",
+    "SIRsparky Mods",
+    "Legendary Roamers"
+  ]
+}
